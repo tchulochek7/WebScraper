@@ -1,0 +1,208 @@
+
+body {
+    padding: 0 !important;
+    margin: 0;
+    background-color: #fffdd0;
+    color: #3A3D78;
+    font-family: Candara Regular;
+    /*padding: 4vw 4vw; */
+}
+/*border: 1px solid blue;*/
+header h1{
+    margin: 0;
+    font-size: 2vw;
+    padding-bottom: 4%;
+}
+header h2{
+    margin: 0;
+    font-size: 3.9vw;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    /*padding-bottom: 5%;*/
+    padding: 4vw 4vw 2vw 4vw;
+}
+.infoMaks {
+    display: flex;
+    flex-direction: column;
+}
+.infoMaks div ul{
+    display: flex-inline;
+    justify-content: center;
+    align-items: flex-start;
+}
+.infoMaks div ul li{
+    list-style-type: square;
+    flex-basis: 100%;
+    margin: 30px 0;
+    font-size: 1.5vw;
+}
+
+.avatar img{
+    width: 40vw;
+    padding: 0;
+}
+.infoMaks div{
+    padding: 0;
+    margin: 0;
+    flex-basis: 75%;
+}
+/*form{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-basis: 25%;
+}*/
+/*.infoMaks form button{
+    background-color: #d09782;
+    border-radius:5px;
+    padding: 22px 32px;
+    box-sizing: border-box;
+    font-size: 10px;
+    width: 200px;
+    margin: 0 auto;
+}*/
+a {
+    text-decoration: none;
+    color: white;
+}
+section{
+    display: flex-inline;
+    align-items:center;
+    padding: 0 4vw;
+}
+section div {
+    display: flex;
+    align-items:center;
+    font-size: 1.7Vmax;
+    margin: 12px;
+}
+section div img{
+    width: 50px;
+    left: 50px;
+}
+section div p{
+    margin: 0
+}
+.photos div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4vw;
+}
+.photos img {
+    width: 40vw;
+    padding: 20px 0;
+}
+
+foteer{
+    padding: 0 4vw 4vw 4vw;
+}
+
+foteer ul{
+    display: flex;
+    justify-content: center;
+    border-top: 2px groove #fff;
+    padding: 6px;
+}
+foteer ul li{
+    list-style-type: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition:1s;
+}
+foteer ul li:hover {
+    transform:scale(1.7);
+}
+
+.navbar .container{
+    max-width: inherit;
+    background-color: #3A3D78;
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-header {
+    padding-left: 30px;
+}
+.navbar{
+    --bs-navbar-padding-y: 0;
+    margin-top:0;
+}
+
+.btn-light {
+    --bs-btn-hover-bg: #A2A2D0;
+    --bs-btn-bg: #AD655F;
+    --bs-btn-border-color: none;
+}
+
+#buttonModal{
+    color: white;
+}
+
+.modal-content {
+    background-color: #3A3D78;
+}
+
+.modal {
+    --bs-modal-header-border-width: 0px;
+    --bs-modal-border-radius: 1rem;
+}
+
+html a {
+    --bs-link-hover-color:  #A2A2D0;
+}
+
+.icon-image {
+
+    border-radius: 50%;
+    transform:scale(3);
+}
+
+.icon-image-phone {
+    border-radius: 50%;
+    transform:scale(2);
+}
+
+.image-text {
+    padding-top: 2vw;
+}
+
+.modal-header {
+    flex-direction: column;
+}
+.table {
+    color: #3A3D78;
+}
+
+.cont {
+    padding-top: 4vw;
+}
+
+.label-results {
+    padding-bottom: 2vw;
+}
+
+.card-cont {
+    margin-top: 2vw;
+   padding-bottom: 2vw;
+}
+
+.card {
+    height: 30rem;
+}
+
+.card-text {
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 4vw;
+}
+
+.btn {
+    background-color: #A2A2D0;
+    bs-btn-border-width: 0px
+
+}
+.btn-light {
+    bs-btn-hover-bg:  #3A3D78;
+}

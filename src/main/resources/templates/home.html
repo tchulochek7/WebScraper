@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home page</title>
+</head>
+
+<body>
+     <h1> Welcome to Pets Agent </h1>
+
+       <input type="submit" value="Search">
+        <div th:if="${not #lists.isEmpty(links)}" th:switch="${links}">
+            <ol th:each="link : ${links}">
+                <li th:text="${link}"></li>
+            </ol>
+        </div>
+</body>
+</html>

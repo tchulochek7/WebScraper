@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--    <title>Home page</title>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a th:href="@{'#'}">
+                    <h2>Пушистый агент</h2>
+                    <h1>Найдет вашего питомца или вернет хозяину</h1>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container cont">
+    <h1> Мы поможем Вам с Вашей проблемой!</h1>
+    <form action="#" th:action="@{/}" th:object="${search}">
+        <div class="container cont">
+            <div class="row">
+                <div class="mb-3 col-5">
+                    <label for="search">Введите строку поиска:</label>
+                    <input class="form-control form-control-lg" name="search" id="search" rows="3"> </input>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div th:if="${not #lists.isEmpty(search)}" th:each="search : ${search}" class="col-3 card-cont">
+                            <div class="card">
+                                <img th:src="${'data:image/jpeg;charset=utf-8;base64,' + images.get(search.id)}"
+                                     class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 th:text="${search.status}" class="card-title"></h5>
+                                    <div class="card-text">
+                                    <p th:text="${search.content}"></p>
+                                    </div>
+                                    <a th:href="${search.url}" class="btn btn-light">Перейти на сайт</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </form>
+</div>
+<script defer th:src="@{js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
